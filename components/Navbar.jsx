@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
@@ -32,7 +33,7 @@ const Navbar = () => {
       <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
         <Link href="/">
           <h1 style={{ color: `${textColor}` }} className="font-bold text-4xl">
-            Captur
+            Photoverse
           </h1>
         </Link>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
