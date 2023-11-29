@@ -2,7 +2,6 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import SignInButton from "./SignInButton";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -50,9 +49,7 @@ const Navbar = () => {
           <li className="p-4">
             <Link href="/contact">Contact</Link>
           </li>
-          <li className="p-4">
-            <SignInButton />
-          </li>
+          <li className="p-4"></li>
         </ul>
 
         {/* Mobile Button */}
@@ -76,9 +73,7 @@ const Navbar = () => {
             <li
               onClick={handleNav}
               className="p-4 text-4xl hover:text-gray-500"
-            >
-              <SignInButton />
-            </li>
+            ></li>
             <li
               onClick={handleNav}
               className="p-4 text-4xl hover:text-gray-500"
